@@ -1,0 +1,1418 @@
+{
+  "_timestamp": "2026-04-15T09:59:47.277735+00:00",
+  "headline": {
+    "total_projects": 28721,
+    "total_agent_lints": 44550,
+    "total_files": 165063,
+    "total_atoms": 12923463,
+    "total_charged": 3273969,
+    "total_diagnostics": 6976408,
+    "total_cross_file": 836739,
+    "mean_diagnostics_per_agent": 156.6
+  },
+  "agent_distribution": {
+    "per_agent": {
+      "claude": 12356,
+      "codex": 11206,
+      "copilot": 7755,
+      "cursor": 7291,
+      "gemini": 5942
+    },
+    "multi_agent_histogram": {
+      "1": 18101,
+      "2": 6776,
+      "3": 2687,
+      "4": 949,
+      "5": 208
+    },
+    "multi_agent_projects": 10620,
+    "co_occurrence": [
+      {
+        "pair": "claude+codex",
+        "count": 5038
+      },
+      {
+        "pair": "claude+copilot",
+        "count": 2682
+      },
+      {
+        "pair": "claude+gemini",
+        "count": 2605
+      },
+      {
+        "pair": "codex+gemini",
+        "count": 2467
+      },
+      {
+        "pair": "codex+copilot",
+        "count": 2321
+      },
+      {
+        "pair": "claude+cursor",
+        "count": 2294
+      },
+      {
+        "pair": "codex+cursor",
+        "count": 2172
+      },
+      {
+        "pair": "copilot+cursor",
+        "count": 1237
+      },
+      {
+        "pair": "copilot+gemini",
+        "count": 1023
+      },
+      {
+        "pair": "cursor+gemini",
+        "count": 772
+      }
+    ]
+  },
+  "band_distribution": {
+    "global": {
+      "counts": {
+        "LOW": 9520,
+        "MODERATE": 20963,
+        "HIGH": 14067
+      },
+      "pct": {
+        "LOW": 21.4,
+        "MODERATE": 47.1,
+        "HIGH": 31.6
+      },
+      "total": 44550
+    },
+    "per_agent": {
+      "claude": {
+        "counts": {
+          "LOW": 2763,
+          "MODERATE": 5901,
+          "HIGH": 3692
+        },
+        "pct": {
+          "LOW": 22.4,
+          "MODERATE": 47.8,
+          "HIGH": 29.9
+        },
+        "total": 12356
+      },
+      "codex": {
+        "counts": {
+          "LOW": 1947,
+          "MODERATE": 5144,
+          "HIGH": 4115
+        },
+        "pct": {
+          "LOW": 17.4,
+          "MODERATE": 45.9,
+          "HIGH": 36.7
+        },
+        "total": 11206
+      },
+      "copilot": {
+        "counts": {
+          "LOW": 1544,
+          "MODERATE": 3925,
+          "HIGH": 2286
+        },
+        "pct": {
+          "LOW": 19.9,
+          "MODERATE": 50.6,
+          "HIGH": 29.5
+        },
+        "total": 7755
+      },
+      "cursor": {
+        "counts": {
+          "LOW": 1923,
+          "MODERATE": 3521,
+          "HIGH": 1847
+        },
+        "pct": {
+          "LOW": 26.4,
+          "MODERATE": 48.3,
+          "HIGH": 25.3
+        },
+        "total": 7291
+      },
+      "gemini": {
+        "counts": {
+          "LOW": 1343,
+          "MODERATE": 2472,
+          "HIGH": 2127
+        },
+        "pct": {
+          "LOW": 22.6,
+          "MODERATE": 41.6,
+          "HIGH": 35.8
+        },
+        "total": 5942
+      }
+    },
+    "single_agent_only": {
+      "claude": {
+        "counts": {
+          "LOW": 1070,
+          "MODERATE": 2131,
+          "HIGH": 1353
+        },
+        "pct": {
+          "LOW": 23.5,
+          "MODERATE": 46.8,
+          "HIGH": 29.7
+        },
+        "total": 4554
+      },
+      "codex": {
+        "counts": {
+          "LOW": 828,
+          "MODERATE": 1711,
+          "HIGH": 1378
+        },
+        "pct": {
+          "LOW": 21.1,
+          "MODERATE": 43.7,
+          "HIGH": 35.2
+        },
+        "total": 3917
+      },
+      "copilot": {
+        "counts": {
+          "LOW": 962,
+          "MODERATE": 1670,
+          "HIGH": 980
+        },
+        "pct": {
+          "LOW": 26.6,
+          "MODERATE": 46.2,
+          "HIGH": 27.1
+        },
+        "total": 3612
+      },
+      "cursor": {
+        "counts": {
+          "LOW": 1352,
+          "MODERATE": 1590,
+          "HIGH": 744
+        },
+        "pct": {
+          "LOW": 36.7,
+          "MODERATE": 43.1,
+          "HIGH": 20.2
+        },
+        "total": 3686
+      },
+      "gemini": {
+        "counts": {
+          "LOW": 721,
+          "MODERATE": 787,
+          "HIGH": 824
+        },
+        "pct": {
+          "LOW": 30.9,
+          "MODERATE": 33.7,
+          "HIGH": 35.3
+        },
+        "total": 2332
+      }
+    }
+  },
+  "top_rules": {
+    "total_diagnostics": 6975308,
+    "top_rules": [
+      {
+        "rule": "CORE:C:0042",
+        "v3_name": "sigma(s)",
+        "description": "Vague (no named constructs)",
+        "count": 2176512,
+        "pct_of_all": 31.2,
+        "repos_affected": 40072,
+        "pct_repos": 89.9
+      },
+      {
+        "rule": "CORE:C:0047",
+        "v3_name": "p(pos)",
+        "description": "Position decay (buried instruction)",
+        "count": 2143378,
+        "pct_of_all": 30.7,
+        "repos_affected": 38883,
+        "pct_repos": 87.3
+      },
+      {
+        "rule": "CORE:E:0004",
+        "v3_name": "lambda(l)",
+        "description": "Terse (too few tokens)",
+        "count": 1613474,
+        "pct_of_all": 23.1,
+        "repos_affected": 39249,
+        "pct_repos": 88.1
+      },
+      {
+        "rule": "CORE:C:0041",
+        "v3_name": "neutral_mass",
+        "description": "Neutral mass (competing prose)",
+        "count": 299969,
+        "pct_of_all": 4.3,
+        "repos_affected": 32132,
+        "pct_repos": 72.1
+      },
+      {
+        "rule": "ambiguous_charge",
+        "v3_name": "ambiguous",
+        "description": "Ambiguous phrasing",
+        "count": 195617,
+        "pct_of_all": 2.8,
+        "repos_affected": 26147,
+        "pct_repos": 58.7
+      },
+      {
+        "rule": "CORE:C:0051",
+        "v3_name": "sigma_coverage",
+        "description": "File-level: all vague",
+        "count": 146236,
+        "pct_of_all": 2.1,
+        "repos_affected": 40743,
+        "pct_repos": 91.5
+      },
+      {
+        "rule": "CORE:C:0043",
+        "v3_name": "mu(m)",
+        "description": "Hedged language",
+        "count": 128488,
+        "pct_of_all": 1.8,
+        "repos_affected": 20208,
+        "pct_repos": 45.4
+      },
+      {
+        "rule": "CORE:C:0050",
+        "v3_name": "sigma_coverage",
+        "description": "File-level: low named coverage",
+        "count": 101257,
+        "pct_of_all": 1.5,
+        "repos_affected": 30253,
+        "pct_repos": 67.9
+      },
+      {
+        "rule": "CORE:D:0002",
+        "v3_name": "asymmetry",
+        "description": "Unbalanced topic (asymmetry)",
+        "count": 96744,
+        "pct_of_all": 1.4,
+        "repos_affected": 22062,
+        "pct_repos": 49.5
+      },
+      {
+        "rule": "CORE:E:0003",
+        "v3_name": "phi(f)",
+        "description": "Bold on prohibition",
+        "count": 65084,
+        "pct_of_all": 0.9,
+        "repos_affected": 14903,
+        "pct_repos": 33.5
+      },
+      {
+        "rule": "CORE:C:0046",
+        "v3_name": "conflict",
+        "description": "Contradiction (same topic, opposing charges)",
+        "count": 8140,
+        "pct_of_all": 0.1,
+        "repos_affected": 3493,
+        "pct_repos": 7.8
+      },
+      {
+        "rule": "CORE:E:0010",
+        "v3_name": "CORE:E:0010",
+        "description": "CORE:E:0010",
+        "count": 381,
+        "pct_of_all": 0.0,
+        "repos_affected": 53,
+        "pct_repos": 0.1
+      },
+      {
+        "rule": "CORE:E:0011",
+        "v3_name": "CORE:E:0011",
+        "description": "CORE:E:0011",
+        "count": 28,
+        "pct_of_all": 0.0,
+        "repos_affected": 14,
+        "pct_repos": 0.0
+      }
+    ],
+    "severity": {
+      "error": {
+        "count": 278441,
+        "pct": 4.0
+      },
+      "warning": {
+        "count": 6696867,
+        "pct": 96.0
+      },
+      "info": {
+        "count": 0,
+        "pct": 0.0
+      }
+    },
+    "per_agent_top5": {
+      "claude": [
+        {
+          "rule": "CORE:C:0042",
+          "count": 620843,
+          "pct": 31.0
+        },
+        {
+          "rule": "CORE:C:0047",
+          "count": 612846,
+          "pct": 30.6
+        },
+        {
+          "rule": "CORE:E:0004",
+          "count": 481151,
+          "pct": 24.0
+        },
+        {
+          "rule": "CORE:C:0041",
+          "count": 90600,
+          "pct": 4.5
+        },
+        {
+          "rule": "ambiguous_charge",
+          "count": 53085,
+          "pct": 2.6
+        }
+      ],
+      "codex": [
+        {
+          "rule": "CORE:C:0042",
+          "count": 381443,
+          "pct": 30.7
+        },
+        {
+          "rule": "CORE:C:0047",
+          "count": 377858,
+          "pct": 30.4
+        },
+        {
+          "rule": "CORE:E:0004",
+          "count": 278622,
+          "pct": 22.4
+        },
+        {
+          "rule": "CORE:C:0041",
+          "count": 59650,
+          "pct": 4.8
+        },
+        {
+          "rule": "ambiguous_charge",
+          "count": 41692,
+          "pct": 3.4
+        }
+      ],
+      "copilot": [
+        {
+          "rule": "CORE:C:0042",
+          "count": 498091,
+          "pct": 31.5
+        },
+        {
+          "rule": "CORE:C:0047",
+          "count": 491083,
+          "pct": 31.1
+        },
+        {
+          "rule": "CORE:E:0004",
+          "count": 355541,
+          "pct": 22.5
+        },
+        {
+          "rule": "CORE:C:0041",
+          "count": 64843,
+          "pct": 4.1
+        },
+        {
+          "rule": "ambiguous_charge",
+          "count": 45180,
+          "pct": 2.9
+        }
+      ],
+      "cursor": [
+        {
+          "rule": "CORE:C:0042",
+          "count": 490307,
+          "pct": 31.8
+        },
+        {
+          "rule": "CORE:C:0047",
+          "count": 477440,
+          "pct": 30.9
+        },
+        {
+          "rule": "CORE:E:0004",
+          "count": 365904,
+          "pct": 23.7
+        },
+        {
+          "rule": "CORE:C:0041",
+          "count": 55748,
+          "pct": 3.6
+        },
+        {
+          "rule": "ambiguous_charge",
+          "count": 37171,
+          "pct": 2.4
+        }
+      ],
+      "gemini": [
+        {
+          "rule": "CORE:C:0042",
+          "count": 185828,
+          "pct": 30.8
+        },
+        {
+          "rule": "CORE:C:0047",
+          "count": 184151,
+          "pct": 30.5
+        },
+        {
+          "rule": "CORE:E:0004",
+          "count": 132256,
+          "pct": 21.9
+        },
+        {
+          "rule": "CORE:C:0041",
+          "count": 29128,
+          "pct": 4.8
+        },
+        {
+          "rule": "ambiguous_charge",
+          "count": 18489,
+          "pct": 3.1
+        }
+      ]
+    }
+  },
+  "specificity": {
+    "total_named": 1097457,
+    "total_abstract": 2176512,
+    "total_charged": 3273969,
+    "named_pct": 33.5,
+    "abstract_pct": 66.5,
+    "files_all_abstract": 26105,
+    "files_all_abstract_pct": 17.0,
+    "files_majority_named": 52496,
+    "files_majority_named_pct": 34.1,
+    "per_agent": {
+      "claude": {
+        "named": 273120,
+        "abstract": 620843,
+        "named_pct": 30.6,
+        "abstract_pct": 69.4
+      },
+      "codex": {
+        "named": 236860,
+        "abstract": 381443,
+        "named_pct": 38.3,
+        "abstract_pct": 61.7
+      },
+      "copilot": {
+        "named": 248502,
+        "abstract": 498091,
+        "named_pct": 33.3,
+        "abstract_pct": 66.7
+      },
+      "cursor": {
+        "named": 218621,
+        "abstract": 490307,
+        "named_pct": 30.8,
+        "abstract_pct": 69.2
+      },
+      "gemini": {
+        "named": 120354,
+        "abstract": 185828,
+        "named_pct": 39.3,
+        "abstract_pct": 60.7
+      }
+    }
+  },
+  "multi_agent_delta": {
+    "n_multi_agent_projects": 10620,
+    "best_agent_wins": {
+      "claude": 2835,
+      "codex": 3802,
+      "copilot": 1440,
+      "cursor": 1575,
+      "gemini": 968
+    },
+    "worst_agent_losses": {
+      "claude": 3379,
+      "codex": 3183,
+      "copilot": 1478,
+      "cursor": 1757,
+      "gemini": 823
+    },
+    "top_15_spreads": [
+      {
+        "project": "alien-resistance",
+        "best_agent": "claude",
+        "best_band": "HIGH",
+        "worst_agent": "gemini",
+        "worst_band": "LOW"
+      },
+      {
+        "project": "aideentreprise.fr",
+        "best_agent": "gemini",
+        "best_band": "HIGH",
+        "worst_agent": "claude",
+        "worst_band": "LOW"
+      },
+      {
+        "project": "SmartInsightGlobal",
+        "best_agent": "gemini",
+        "best_band": "HIGH",
+        "worst_agent": "claude",
+        "worst_band": "MODERATE"
+      },
+      {
+        "project": "utem1",
+        "best_agent": "codex",
+        "best_band": "HIGH",
+        "worst_agent": "cursor",
+        "worst_band": "HIGH"
+      },
+      {
+        "project": "neuron-ai",
+        "best_agent": "claude",
+        "best_band": "HIGH",
+        "worst_agent": "codex",
+        "worst_band": "MODERATE"
+      },
+      {
+        "project": "Churchify",
+        "best_agent": "codex",
+        "best_band": "HIGH",
+        "worst_agent": "claude",
+        "worst_band": "LOW"
+      },
+      {
+        "project": "xequemate-na-cama",
+        "best_agent": "codex",
+        "best_band": "HIGH",
+        "worst_agent": "claude",
+        "worst_band": "MODERATE"
+      },
+      {
+        "project": "threeon-operations",
+        "best_agent": "codex",
+        "best_band": "HIGH",
+        "worst_agent": "claude",
+        "worst_band": "MODERATE"
+      },
+      {
+        "project": "dribbble-lp",
+        "best_agent": "codex",
+        "best_band": "HIGH",
+        "worst_agent": "claude",
+        "worst_band": "MODERATE"
+      },
+      {
+        "project": "finorg-app",
+        "best_agent": "codex",
+        "best_band": "HIGH",
+        "worst_agent": "claude",
+        "worst_band": "MODERATE"
+      },
+      {
+        "project": "iskr",
+        "best_agent": "codex",
+        "best_band": "HIGH",
+        "worst_agent": "claude",
+        "worst_band": "MODERATE"
+      },
+      {
+        "project": "lastro",
+        "best_agent": "codex",
+        "best_band": "HIGH",
+        "worst_agent": "claude",
+        "worst_band": "MODERATE"
+      },
+      {
+        "project": "negociocertoorg",
+        "best_agent": "codex",
+        "best_band": "HIGH",
+        "worst_agent": "claude",
+        "worst_band": "MODERATE"
+      },
+      {
+        "project": "openclaw-mc",
+        "best_agent": "codex",
+        "best_band": "HIGH",
+        "worst_agent": "claude",
+        "worst_band": "MODERATE"
+      },
+      {
+        "project": "professional-rag-system",
+        "best_agent": "codex",
+        "best_band": "HIGH",
+        "worst_agent": "claude",
+        "worst_band": "MODERATE"
+      }
+    ]
+  },
+  "file_count_quality": {
+    "buckets": [
+      {
+        "bucket": "1",
+        "n": 19558,
+        "bands": {
+          "LOW": 5780,
+          "MODERATE": 7681,
+          "HIGH": 6097
+        },
+        "bands_pct": {
+          "LOW": 29.6,
+          "MODERATE": 39.3,
+          "HIGH": 31.2
+        }
+      },
+      {
+        "bucket": "2-5",
+        "n": 16565,
+        "bands": {
+          "LOW": 2643,
+          "MODERATE": 8243,
+          "HIGH": 5679
+        },
+        "bands_pct": {
+          "LOW": 16.0,
+          "MODERATE": 49.8,
+          "HIGH": 34.3
+        }
+      },
+      {
+        "bucket": "6-20",
+        "n": 7971,
+        "bands": {
+          "LOW": 1045,
+          "MODERATE": 4773,
+          "HIGH": 2153
+        },
+        "bands_pct": {
+          "LOW": 13.1,
+          "MODERATE": 59.9,
+          "HIGH": 27.0
+        }
+      },
+      {
+        "bucket": "21-50",
+        "n": 320,
+        "bands": {
+          "LOW": 48,
+          "MODERATE": 193,
+          "HIGH": 79
+        },
+        "bands_pct": {
+          "LOW": 15.0,
+          "MODERATE": 60.3,
+          "HIGH": 24.7
+        }
+      },
+      {
+        "bucket": "51+",
+        "n": 136,
+        "bands": {
+          "LOW": 4,
+          "MODERATE": 73,
+          "HIGH": 59
+        },
+        "bands_pct": {
+          "LOW": 2.9,
+          "MODERATE": 53.7,
+          "HIGH": 43.4
+        }
+      }
+    ]
+  },
+  "config_types": {
+    "base": {
+      "n_files": 69916,
+      "bands": {
+        "LOW": 1271,
+        "MODERATE": 1195,
+        "HIGH": 67450
+      },
+      "bands_pct": {
+        "LOW": 1.8,
+        "MODERATE": 1.7,
+        "HIGH": 96.5
+      },
+      "named_pct": 39.8,
+      "terse_pct": 51.5,
+      "projects_using": 0
+    },
+    "rules": {
+      "n_files": 29122,
+      "bands": {
+        "LOW": 463,
+        "MODERATE": 698,
+        "HIGH": 27961
+      },
+      "bands_pct": {
+        "LOW": 1.6,
+        "MODERATE": 2.4,
+        "HIGH": 96.0
+      },
+      "named_pct": 31.2,
+      "terse_pct": 58.8,
+      "projects_using": 5044
+    },
+    "skills": {
+      "n_files": 39231,
+      "bands": {
+        "LOW": 505,
+        "MODERATE": 358,
+        "HIGH": 38368
+      },
+      "bands_pct": {
+        "LOW": 1.3,
+        "MODERATE": 0.9,
+        "HIGH": 97.8
+      },
+      "named_pct": 30.8,
+      "terse_pct": 55.8,
+      "projects_using": 4778
+    },
+    "agents": {
+      "n_files": 15484,
+      "bands": {
+        "LOW": 175,
+        "MODERATE": 76,
+        "HIGH": 15233
+      },
+      "bands_pct": {
+        "LOW": 1.1,
+        "MODERATE": 0.5,
+        "HIGH": 98.4
+      },
+      "named_pct": 17.0,
+      "terse_pct": 62.9,
+      "projects_using": 1899
+    },
+    "per_agent": {
+      "claude": {
+        "base": 18733,
+        "rules": 4638,
+        "skills": 10692,
+        "agents": 10538,
+        "total": 44601
+      },
+      "codex": {
+        "base": 19001,
+        "rules": 81,
+        "skills": 8911,
+        "agents": 165,
+        "total": 28158
+      },
+      "copilot": {
+        "base": 16026,
+        "rules": 4486,
+        "skills": 10352,
+        "agents": 3012,
+        "total": 33876
+      },
+      "cursor": {
+        "base": 5903,
+        "rules": 19843,
+        "skills": 6237,
+        "agents": 1716,
+        "total": 33699
+      },
+      "gemini": {
+        "base": 10253,
+        "rules": 74,
+        "skills": 3039,
+        "agents": 53,
+        "total": 13419
+      }
+    }
+  },
+  "skills_quality": {
+    "total_skills": 13309,
+    "total_skill_files": 39187,
+    "top_skills_by_adoption": [
+      {
+        "name": "vercel-react-best-practices",
+        "repos": 315,
+        "files": 895,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 30.7
+      },
+      {
+        "name": "frontend-design",
+        "repos": 271,
+        "files": 397,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 2.8
+      },
+      {
+        "name": "tailwindcss-development",
+        "repos": 223,
+        "files": 733,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 46.2
+      },
+      {
+        "name": "pest-testing",
+        "repos": 216,
+        "files": 718,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 55.1
+      },
+      {
+        "name": "web-design-guidelines",
+        "repos": 197,
+        "files": 288,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 10.2
+      },
+      {
+        "name": "skill-creator",
+        "repos": 189,
+        "files": 293,
+        "high_pct": 99.7,
+        "low_pct": 0.0,
+        "named_pct": 27.4
+      },
+      {
+        "name": "vercel-composition-patterns",
+        "repos": 131,
+        "files": 300,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 10.7
+      },
+      {
+        "name": "find-skills",
+        "repos": 113,
+        "files": 152,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 18.9
+      },
+      {
+        "name": "ui-ux-pro-max",
+        "repos": 113,
+        "files": 156,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 19.6
+      },
+      {
+        "name": "openspec-apply-change",
+        "repos": 111,
+        "files": 183,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 18.0
+      },
+      {
+        "name": "openspec-archive-change",
+        "repos": 110,
+        "files": 182,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 26.5
+      },
+      {
+        "name": "openspec-explore",
+        "repos": 110,
+        "files": 182,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 2.5
+      },
+      {
+        "name": "code-review",
+        "repos": 96,
+        "files": 147,
+        "high_pct": 98.0,
+        "low_pct": 0.0,
+        "named_pct": 19.0
+      },
+      {
+        "name": "laravel-best-practices",
+        "repos": 94,
+        "files": 298,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 49.7
+      },
+      {
+        "name": "commit",
+        "repos": 88,
+        "files": 146,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 27.4
+      },
+      {
+        "name": "livewire-development",
+        "repos": 87,
+        "files": 278,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 75.5
+      },
+      {
+        "name": "agent-browser",
+        "repos": 78,
+        "files": 91,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 55.5
+      },
+      {
+        "name": "next-best-practices",
+        "repos": 76,
+        "files": 92,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 92.6
+      },
+      {
+        "name": "wayfinder-development",
+        "repos": 75,
+        "files": 249,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 56.7
+      },
+      {
+        "name": "openspec-propose",
+        "repos": 74,
+        "files": 135,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 38.7
+      },
+      {
+        "name": "shadcn",
+        "repos": 74,
+        "files": 101,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 82.6
+      },
+      {
+        "name": "supabase-postgres-best-practices",
+        "repos": 73,
+        "files": 189,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 27.0
+      },
+      {
+        "name": "react-best-practices",
+        "repos": 70,
+        "files": 163,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 30.3
+      },
+      {
+        "name": "fluxui-development",
+        "repos": 59,
+        "files": 202,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 14.4
+      },
+      {
+        "name": "playwright-cli",
+        "repos": 52,
+        "files": 74,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 46.6
+      },
+      {
+        "name": "openspec-sync-specs",
+        "repos": 50,
+        "files": 64,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 13.0
+      },
+      {
+        "name": "openspec-continue-change",
+        "repos": 49,
+        "files": 63,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 22.1
+      },
+      {
+        "name": "openspec-new-change",
+        "repos": 49,
+        "files": 63,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 25.2
+      },
+      {
+        "name": "openspec-verify-change",
+        "repos": 49,
+        "files": 62,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 12.3
+      },
+      {
+        "name": "git-commit",
+        "repos": 48,
+        "files": 65,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 36.9
+      }
+    ],
+    "best_by_named": [
+      {
+        "name": "next-best-practices",
+        "repos": 76,
+        "named_pct": 92.6
+      },
+      {
+        "name": "shadcn",
+        "repos": 74,
+        "named_pct": 82.6
+      },
+      {
+        "name": "livewire-development",
+        "repos": 87,
+        "named_pct": 75.5
+      },
+      {
+        "name": "wayfinder-development",
+        "repos": 75,
+        "named_pct": 56.7
+      },
+      {
+        "name": "agent-browser",
+        "repos": 78,
+        "named_pct": 55.5
+      },
+      {
+        "name": "pest-testing",
+        "repos": 216,
+        "named_pct": 55.1
+      },
+      {
+        "name": "laravel-best-practices",
+        "repos": 94,
+        "named_pct": 49.7
+      },
+      {
+        "name": "playwright-cli",
+        "repos": 52,
+        "named_pct": 46.6
+      },
+      {
+        "name": "tailwindcss-development",
+        "repos": 223,
+        "named_pct": 46.2
+      },
+      {
+        "name": "openspec-propose",
+        "repos": 74,
+        "named_pct": 38.7
+      }
+    ],
+    "worst_by_named": [
+      {
+        "name": "openspec-explore",
+        "repos": 110,
+        "named_pct": 2.5
+      },
+      {
+        "name": "frontend-design",
+        "repos": 271,
+        "named_pct": 2.8
+      },
+      {
+        "name": "web-design-guidelines",
+        "repos": 197,
+        "named_pct": 10.2
+      },
+      {
+        "name": "vercel-composition-patterns",
+        "repos": 131,
+        "named_pct": 10.7
+      },
+      {
+        "name": "openspec-sync-specs",
+        "repos": 50,
+        "named_pct": 13.0
+      },
+      {
+        "name": "fluxui-development",
+        "repos": 59,
+        "named_pct": 14.4
+      },
+      {
+        "name": "openspec-apply-change",
+        "repos": 111,
+        "named_pct": 18.0
+      },
+      {
+        "name": "find-skills",
+        "repos": 113,
+        "named_pct": 18.9
+      },
+      {
+        "name": "code-review",
+        "repos": 96,
+        "named_pct": 19.0
+      },
+      {
+        "name": "ui-ux-pro-max",
+        "repos": 113,
+        "named_pct": 19.6
+      }
+    ]
+  },
+  "subagents_quality": {
+    "total_subagent_roles": 5526,
+    "top_subagents": [
+      {
+        "name": "code-reviewer.md",
+        "repos": 236,
+        "named_pct": 14.4
+      },
+      {
+        "name": "architect.md",
+        "repos": 89,
+        "named_pct": 18.2
+      },
+      {
+        "name": "reviewer.md",
+        "repos": 75,
+        "named_pct": 17.5
+      },
+      {
+        "name": "debugger.md",
+        "repos": 66,
+        "named_pct": 9.4
+      },
+      {
+        "name": "readme.md",
+        "repos": 65,
+        "named_pct": 12.2
+      },
+      {
+        "name": "agents.md",
+        "repos": 58,
+        "named_pct": 38.2
+      },
+      {
+        "name": "security-auditor.md",
+        "repos": 57,
+        "named_pct": 14.8
+      },
+      {
+        "name": "planner.md",
+        "repos": 54,
+        "named_pct": 13.9
+      },
+      {
+        "name": "test-runner.md",
+        "repos": 54,
+        "named_pct": 10.5
+      },
+      {
+        "name": "frontend-developer.md",
+        "repos": 47,
+        "named_pct": 9.0
+      },
+      {
+        "name": "researcher.md",
+        "repos": 46,
+        "named_pct": 14.5
+      },
+      {
+        "name": "security-reviewer.md",
+        "repos": 45,
+        "named_pct": 22.0
+      },
+      {
+        "name": "tester.md",
+        "repos": 44,
+        "named_pct": 13.9
+      },
+      {
+        "name": "test-writer.md",
+        "repos": 41,
+        "named_pct": 21.7
+      },
+      {
+        "name": "orchestrator.md",
+        "repos": 36,
+        "named_pct": 28.5
+      }
+    ]
+  },
+  "content_length": {
+    "base": {
+      "n_files": 69916,
+      "median_atoms": 50,
+      "mean_atoms": 87.0,
+      "median_directives": 11,
+      "mean_directives": 21.9,
+      "median_tokens": 8.6,
+      "named_pct": 39.8,
+      "directive_ratio": 25.6
+    },
+    "rules": {
+      "n_files": 29122,
+      "median_atoms": 34,
+      "mean_atoms": 58.5,
+      "median_directives": 9,
+      "mean_directives": 16.4,
+      "median_tokens": 8.0,
+      "named_pct": 31.2,
+      "directive_ratio": 31.2
+    },
+    "skills": {
+      "n_files": 39231,
+      "median_atoms": 59,
+      "mean_atoms": 90.5,
+      "median_directives": 14,
+      "mean_directives": 22.9,
+      "median_tokens": 8.2,
+      "named_pct": 30.8,
+      "directive_ratio": 26.5
+    },
+    "agents": {
+      "n_files": 15484,
+      "median_atoms": 61,
+      "mean_atoms": 83.6,
+      "median_directives": 17,
+      "mean_directives": 23.5,
+      "median_tokens": 7.8,
+      "named_pct": 17.0,
+      "directive_ratio": 30.0
+    }
+  },
+  "descriptive": {
+    "total_files": 153753,
+    "file_size": {
+      "mean_atoms": 82.2,
+      "median_atoms": 50
+    },
+    "directives_per_file": {
+      "mean": 21.3,
+      "median": 12,
+      "zero_directive_files": 0,
+      "zero_directive_pct": 0.0
+    },
+    "directive_ratio": {
+      "mean": 30.7,
+      "median": 27.3
+    },
+    "instruction_length": {
+      "mean_tokens": 8.9,
+      "median_tokens": 8
+    },
+    "contradictions": {
+      "files": 5027,
+      "pct": 3.3
+    },
+    "top_file_names": [
+      {
+        "path": "agents.md",
+        "count": 17335
+      },
+      {
+        "path": "claude.md",
+        "count": 10642
+      },
+      {
+        "path": ".github/copilot-instructions.md",
+        "count": 5647
+      },
+      {
+        "path": "gemini.md",
+        "count": 4880
+      },
+      {
+        "path": "CLAUDE.md",
+        "count": 3372
+      },
+      {
+        "path": "AGENTS.md",
+        "count": 3319
+      },
+      {
+        "path": ".cursorrules",
+        "count": 2415
+      },
+      {
+        "path": "GEMINI.md",
+        "count": 823
+      },
+      {
+        "path": ".claude/rules/testing.md",
+        "count": 422
+      },
+      {
+        "path": ".claude/claude.md",
+        "count": 395
+      },
+      {
+        "path": ".claude/agents/code-reviewer.md",
+        "count": 339
+      },
+      {
+        "path": ".agents/skills/tailwindcss-development/skill.md",
+        "count": 334
+      },
+      {
+        "path": ".agents/skills/pest-testing/skill.md",
+        "count": 332
+      },
+      {
+        "path": "docs/agents.md",
+        "count": 312
+      },
+      {
+        "path": ".agents/skills/vercel-react-best-practices/agents.md",
+        "count": 279
+      },
+      {
+        "path": ".cursor/rules/cursor_rules.mdc",
+        "count": 231
+      },
+      {
+        "path": ".cursor/rules/self_improve.mdc",
+        "count": 225
+      },
+      {
+        "path": ".claude/skills/tailwindcss-development/skill.md",
+        "count": 210
+      },
+      {
+        "path": ".claude/skills/pest-testing/skill.md",
+        "count": 208
+      },
+      {
+        "path": ".agents/skills/vercel-react-best-practices/skill.md",
+        "count": 206
+      }
+    ],
+    "unique_file_paths": 49071
+  }
+}
