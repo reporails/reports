@@ -1,6 +1,6 @@
 # 30K Corpus: AI Instruction Quality Dataset
 
-Dataset for ["The State of AI Instruction Quality"](https://medium.com/@cleverhoods/the-state-of-ai-instruction-quality) — a corpus analysis of 28,721 GitHub repositories containing instruction files for five coding agents.
+Dataset for ["The State of AI Instruction Quality"](https://medium.com/@cleverhoods/the-state-of-ai-instruction-quality-30k-repo-analysis-ce49c7667a57) — a corpus analysis of 28,721 GitHub repositories containing instruction files for five coding agents. Provided via [Reporails CLI](https://github.com/reporails/cli).
 
 ## What's in this dataset
 
