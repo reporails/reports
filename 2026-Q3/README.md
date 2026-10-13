@@ -34,7 +34,7 @@ Same section layout as the Q2 file, plus `report_figures`. Definitions that diff
 | `band_distribution`  | Score bands (LOW below 5, MODERATE 5 to under 7, HIGH 7 and up) globally and per agent |
 | `top_rules`          | Most common diagnostics, with setups and repos affected                           |
 | `specificity`        | Named vs abstract share of instructions (charged atoms), per agent                |
-| `multi_agent_delta`  | Within-repo best and worst agent, bands only                                      |
+| `multi_agent_delta`  | Within-repo best and worst agent counts and band-spread counts (no repo names)    |
 | `file_count_quality` | Score bands by instruction-file count                                             |
 | `config_types`       | Bands, named share and terse share by file type (main, rules, skills, sub-agents, other) |
 | `content_length`     | Median atoms, directives and tokens per file type                                 |

@@ -653,113 +653,14 @@
       "antigravity": 109,
       "codex": 57
     },
-    "top_15_spreads": [
-      {
-        "project": "ESPresense/ESPresense",
-        "best_agent": "generic",
-        "best_band": "HIGH",
-        "worst_agent": "claude",
-        "worst_band": "LOW"
-      },
-      {
-        "project": "plastic-labs/tutor-gpt",
-        "best_agent": "claude",
-        "best_band": "HIGH",
-        "worst_agent": "cursor",
-        "worst_band": "LOW"
-      },
-      {
-        "project": "spring-projects/spring-ai",
-        "best_agent": "claude",
-        "best_band": "HIGH",
-        "worst_agent": "generic",
-        "worst_band": "LOW"
-      },
-      {
-        "project": "spring-projects/spring-amqp",
-        "best_agent": "claude",
-        "best_band": "HIGH",
-        "worst_agent": "generic",
-        "worst_band": "LOW"
-      },
-      {
-        "project": "spring-projects/spring-integration",
-        "best_agent": "claude",
-        "best_band": "HIGH",
-        "worst_agent": "generic",
-        "worst_band": "LOW"
-      },
-      {
-        "project": "spring-projects/spring-kafka",
-        "best_agent": "claude",
-        "best_band": "HIGH",
-        "worst_agent": "generic",
-        "worst_band": "LOW"
-      },
-      {
-        "project": "motiondivision/motion-vue",
-        "best_agent": "claude",
-        "best_band": "HIGH",
-        "worst_agent": "antigravity",
-        "worst_band": "LOW"
-      },
-      {
-        "project": "firebase/FirebaseUI-iOS",
-        "best_agent": "generic",
-        "best_band": "HIGH",
-        "worst_agent": "claude",
-        "worst_band": "LOW"
-      },
-      {
-        "project": "railspulse-org/rails_pulse",
-        "best_agent": "claude",
-        "best_band": "HIGH",
-        "worst_agent": "antigravity",
-        "worst_band": "LOW"
-      },
-      {
-        "project": "lgazo/drawio-mcp-server",
-        "best_agent": "generic",
-        "best_band": "HIGH",
-        "worst_agent": "claude",
-        "worst_band": "LOW"
-      },
-      {
-        "project": "avishayil/react-native-restart",
-        "best_agent": "claude",
-        "best_band": "HIGH",
-        "worst_agent": "generic",
-        "worst_band": "LOW"
-      },
-      {
-        "project": "svenshi/oxidns",
-        "best_agent": "generic",
-        "best_band": "HIGH",
-        "worst_agent": "claude",
-        "worst_band": "LOW"
-      },
-      {
-        "project": "otterscan/otterscan",
-        "best_agent": "generic",
-        "best_band": "HIGH",
-        "worst_agent": "claude",
-        "worst_band": "LOW"
-      },
-      {
-        "project": "splunk/splunk-sdk-python",
-        "best_agent": "generic",
-        "best_band": "HIGH",
-        "worst_agent": "claude",
-        "worst_band": "LOW"
-      },
-      {
-        "project": "firebase/FirebaseUI-Android",
-        "best_agent": "generic",
-        "best_band": "HIGH",
-        "worst_agent": "claude",
-        "worst_band": "LOW"
-      }
-    ]
+    "band_spread_counts": {
+      "HIGH->HIGH": 1393,
+      "HIGH->LOW": 102,
+      "HIGH->MODERATE": 789,
+      "LOW->LOW": 47,
+      "MODERATE->LOW": 94,
+      "MODERATE->MODERATE": 496
+    }
   },
   "file_count_quality": {
     "buckets": [
@@ -1435,8 +1336,8 @@
       "repos_with_linted_setup": 9776,
       "pct_repos": 91.1,
       "findings": 655791,
-      "content_atoms": 5766087,
-      "one_finding_per_n_instructions": 8.79
+      "directives_and_constraints": 1894268,
+      "pct_of_directives_and_constraints": 34.6
     },
     "stars_vs_score": {
       "spearman_rho": -0.028,
