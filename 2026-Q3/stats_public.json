@@ -584,6 +584,7 @@
     }
   },
   "specificity": {
+    "setups_covered": 15237,
     "total_named": 786916,
     "total_abstract": 1167834,
     "total_charged": 1954750,

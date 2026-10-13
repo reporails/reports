@@ -49,7 +49,7 @@ Same section layout as the Q2 file, plus `report_figures`. Definitions that diff
 - **Agents:** `claude`, `generic` (`AGENTS.md`), `copilot`, `cursor`, `antigravity` (Gemini's agent), `codex` (repositories with a `.codex/` folder). Q2 used `gemini` and counted `AGENTS.md` as `codex`.
 - **Atom:** one instruction unit after parsing. `content_atoms` excludes headings. A charged atom is a directive or a constraint; a named atom names a specific tool, file or command.
 - **Score bands:** LOW below 5, MODERATE 5 to under 7, HIGH 7 and up, on the 0 to 10 score `ails check` reports. Q2's bands came from a different scorer and are not comparable.
-- **Coverage:** most sections cover the 15,219 setups with diagnostics; `specificity` covers all 15,237 measured setups. Per-agent setup counts are therefore up to 18 below the report's counts.
+- **Coverage:** most sections cover the 15,219 setups with diagnostics; `specificity` covers all 15,237 measured setups (`specificity.setups_covered`). So `headline.total_charged` (1,894,268 directives and constraints, the denominator of the report's per-instruction rate) and `specificity.total_charged` (1,954,750) count different setup populations. Per-agent setup counts are up to 18 below the report's counts for the same reason.
 - **Rules:** `top_rules` counts `repos_affected` as distinct repositories (Q2 counted setups under that name; `setups_affected` keeps the setup count).
 - **File types:** main, rules, skills, sub-agents, and `other` (commands and prompts), by each agent's documented folder conventions. The top file-count bucket is 51 to 90 files.
 
@@ -57,7 +57,7 @@ Same section layout as the Q2 file, plus `report_figures`. Definitions that diff
 
 ### Sampling frame
 
-- 10,000 public GitHub repositories carrying at least one instruction file of the five supported agents, selected top-down by stars, then filtered to English instruction files.
+- 10,000 public GitHub repositories carrying at least one instruction file of a supported coding agent (Claude Code, Codex, GitHub Copilot, Cursor, Gemini, or a shared `AGENTS.md`), selected top-down by stars, then filtered to English instruction files.
 - Stars: minimum 493, median 1,551, maximum 454,882. Findings about stars hold within this range, not for small repositories.
 - English gate: a deterministic script check (no model) over every instruction file; 8.2% of the hunted repositories were excluded as non-English.
 - Snapshot: each repository was cloned in September 2026. Files changed since then are not reflected.
