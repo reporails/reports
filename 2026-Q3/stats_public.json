@@ -1,0 +1,1453 @@
+{
+  "_timestamp": "2026-10-13T07:15:25+00:00",
+  "headline": {
+    "total_projects": 9776,
+    "total_agent_lints": 15219,
+    "total_files": 72422,
+    "total_atoms": 6239836,
+    "total_charged": 1894268,
+    "total_diagnostics": 2012608,
+    "mean_diagnostics_per_agent": 132.2,
+    "census_repos": 10000,
+    "projects_with_mapped_setup": 9784,
+    "agent_setups_mapped": 15237,
+    "agent_setups_scored": 14961,
+    "agent_setups_unscored": 258
+  },
+  "agent_distribution": {
+    "per_agent": {
+      "claude": 6023,
+      "generic": 6120,
+      "copilot": 1754,
+      "cursor": 731,
+      "antigravity": 430,
+      "codex": 161
+    },
+    "multi_agent_histogram": {
+      "1": 5569,
+      "2": 3198,
+      "3": 820,
+      "4": 151,
+      "5": 38
+    },
+    "multi_agent_projects": 4207,
+    "co_occurrence": [
+      {
+        "pair": "claude+generic",
+        "count": 3309
+      },
+      {
+        "pair": "copilot+generic",
+        "count": 833
+      },
+      {
+        "pair": "claude+copilot",
+        "count": 749
+      },
+      {
+        "pair": "claude+cursor",
+        "count": 450
+      },
+      {
+        "pair": "cursor+generic",
+        "count": 408
+      },
+      {
+        "pair": "antigravity+claude",
+        "count": 324
+      },
+      {
+        "pair": "antigravity+generic",
+        "count": 313
+      },
+      {
+        "pair": "copilot+cursor",
+        "count": 148
+      },
+      {
+        "pair": "claude+codex",
+        "count": 141
+      },
+      {
+        "pair": "antigravity+copilot",
+        "count": 109
+      }
+    ]
+  },
+  "band_distribution": {
+    "global": {
+      "counts": {
+        "LOW": 810,
+        "MODERATE": 4591,
+        "HIGH": 9560
+      },
+      "pct": {
+        "LOW": 5.4,
+        "MODERATE": 30.7,
+        "HIGH": 63.9
+      },
+      "total": 14961
+    },
+    "per_agent": {
+      "claude": {
+        "counts": {
+          "LOW": 311,
+          "MODERATE": 1678,
+          "HIGH": 3871
+        },
+        "pct": {
+          "LOW": 5.3,
+          "MODERATE": 28.6,
+          "HIGH": 66.1
+        },
+        "total": 5860
+      },
+      "generic": {
+        "counts": {
+          "LOW": 304,
+          "MODERATE": 1864,
+          "HIGH": 3890
+        },
+        "pct": {
+          "LOW": 5.0,
+          "MODERATE": 30.8,
+          "HIGH": 64.2
+        },
+        "total": 6058
+      },
+      "copilot": {
+        "counts": {
+          "LOW": 84,
+          "MODERATE": 594,
+          "HIGH": 1067
+        },
+        "pct": {
+          "LOW": 4.8,
+          "MODERATE": 34.0,
+          "HIGH": 61.1
+        },
+        "total": 1745
+      },
+      "cursor": {
+        "counts": {
+          "LOW": 69,
+          "MODERATE": 263,
+          "HIGH": 387
+        },
+        "pct": {
+          "LOW": 9.6,
+          "MODERATE": 36.6,
+          "HIGH": 53.8
+        },
+        "total": 719
+      },
+      "antigravity": {
+        "counts": {
+          "LOW": 37,
+          "MODERATE": 140,
+          "HIGH": 243
+        },
+        "pct": {
+          "LOW": 8.8,
+          "MODERATE": 33.3,
+          "HIGH": 57.9
+        },
+        "total": 420
+      },
+      "codex": {
+        "counts": {
+          "LOW": 5,
+          "MODERATE": 52,
+          "HIGH": 102
+        },
+        "pct": {
+          "LOW": 3.1,
+          "MODERATE": 32.7,
+          "HIGH": 64.2
+        },
+        "total": 159
+      }
+    },
+    "single_agent_only": {
+      "claude": {
+        "counts": {
+          "LOW": 130,
+          "MODERATE": 572,
+          "HIGH": 1508
+        },
+        "pct": {
+          "LOW": 5.9,
+          "MODERATE": 25.9,
+          "HIGH": 68.2
+        },
+        "total": 2210
+      },
+      "generic": {
+        "counts": {
+          "LOW": 143,
+          "MODERATE": 723,
+          "HIGH": 1507
+        },
+        "pct": {
+          "LOW": 6.0,
+          "MODERATE": 30.5,
+          "HIGH": 63.5
+        },
+        "total": 2373
+      },
+      "copilot": {
+        "counts": {
+          "LOW": 54,
+          "MODERATE": 251,
+          "HIGH": 386
+        },
+        "pct": {
+          "LOW": 7.8,
+          "MODERATE": 36.3,
+          "HIGH": 55.9
+        },
+        "total": 691
+      },
+      "cursor": {
+        "counts": {
+          "LOW": 36,
+          "MODERATE": 53,
+          "HIGH": 71
+        },
+        "pct": {
+          "LOW": 22.5,
+          "MODERATE": 33.1,
+          "HIGH": 44.4
+        },
+        "total": 160
+      },
+      "antigravity": {
+        "counts": {
+          "LOW": 1,
+          "MODERATE": 13,
+          "HIGH": 22
+        },
+        "pct": {
+          "LOW": 2.8,
+          "MODERATE": 36.1,
+          "HIGH": 61.1
+        },
+        "total": 36
+      },
+      "codex": {
+        "counts": {
+          "LOW": 0,
+          "MODERATE": 7,
+          "HIGH": 4
+        },
+        "pct": {
+          "LOW": 0.0,
+          "MODERATE": 63.6,
+          "HIGH": 36.4
+        },
+        "total": 11
+      }
+    },
+    "unscored_setups": 258
+  },
+  "top_rules": {
+    "total_diagnostics": 2012608,
+    "top_rules": [
+      {
+        "rule": "CORE:C:0042",
+        "description": "Vague instruction — doesn't name specific tools, files, or commands.",
+        "count": 655791,
+        "pct_of_all": 32.6,
+        "setups_affected": 13720,
+        "pct_setups": 90.2,
+        "repos_affected": 8910,
+        "pct_repos": 91.1
+      },
+      {
+        "rule": "CORE:E:0004",
+        "description": "Too brief (N tokens) — not enough detail for the model to act on.",
+        "count": 387185,
+        "pct_of_all": 19.2,
+        "setups_affected": 13233,
+        "pct_setups": 87.0,
+        "repos_affected": 8592,
+        "pct_repos": 87.9
+      },
+      {
+        "rule": "CORE:C:0044",
+        "description": "N% of the instructions in this file and `AGENTS.md` cover the same topics — the copies can drift apart.",
+        "count": 369542,
+        "pct_of_all": 18.4,
+        "setups_affected": 4484,
+        "pct_setups": 29.5,
+        "repos_affected": 3243,
+        "pct_repos": 33.2
+      },
+      {
+        "rule": "CORE:C:0041",
+        "description": "N context items (descriptions, sub-bullets, references) sit around N instruction(s) on the same topic — on a s",
+        "count": 155360,
+        "pct_of_all": 7.7,
+        "setups_affected": 9102,
+        "pct_setups": 59.8,
+        "repos_affected": 6117,
+        "pct_repos": 62.6
+      },
+      {
+        "rule": "CORE:C:0050",
+        "description": "N context items near vague instructions on the same topic — on a small model this can lower how often they are",
+        "count": 101555,
+        "pct_of_all": 5.0,
+        "setups_affected": 10400,
+        "pct_setups": 68.3,
+        "repos_affected": 6869,
+        "pct_repos": 70.3
+      },
+      {
+        "rule": "CORE:C:0043",
+        "description": "Hedged language ('should', 'consider', 'might') — the model may treat this as optional.",
+        "count": 94115,
+        "pct_of_all": 4.7,
+        "setups_affected": 10408,
+        "pct_setups": 68.4,
+        "repos_affected": 6877,
+        "pct_repos": 70.3
+      },
+      {
+        "rule": "CORE:S:0039",
+        "description": "Instruction in heading — a heading reads as a section title, so an instruction in it can go unfollowed.",
+        "count": 92026,
+        "pct_of_all": 4.6,
+        "setups_affected": 6943,
+        "pct_setups": 45.6,
+        "repos_affected": 4742,
+        "pct_repos": 48.5
+      },
+      {
+        "rule": "CORE:D:0002",
+        "description": "Unbalanced topic — directives are much stronger than prohibitions. The weaker side may be ignored.",
+        "count": 63272,
+        "pct_of_all": 3.1,
+        "setups_affected": 9228,
+        "pct_setups": 60.6,
+        "repos_affected": 6044,
+        "pct_repos": 61.8
+      },
+      {
+        "rule": "CORE:D:0003",
+        "description": "Prohibition before its directive — the directive on the same topic comes later (line N), so the model reads wh",
+        "count": 46774,
+        "pct_of_all": 2.3,
+        "setups_affected": 7859,
+        "pct_setups": 51.6,
+        "repos_affected": 5423,
+        "pct_repos": 55.5
+      },
+      {
+        "rule": "CORE:C:0047",
+        "description": "Buried prohibition at position N of N — a prohibition that names what it forbids loses its protection among ot",
+        "count": 21705,
+        "pct_of_all": 1.1,
+        "setups_affected": 6675,
+        "pct_setups": 43.9,
+        "repos_affected": 4378,
+        "pct_repos": 44.8
+      },
+      {
+        "rule": "CORE:C:0052",
+        "description": "No instruction on this topic is strong enough to override the model's default behavior — it is vague and hedge",
+        "count": 12620,
+        "pct_of_all": 0.6,
+        "setups_affected": 5259,
+        "pct_setups": 34.6,
+        "repos_affected": 3602,
+        "pct_repos": 36.8
+      },
+      {
+        "rule": "CORE:E:0003",
+        "description": "Bold on a prohibition draws attention to what NOT to do.",
+        "count": 9912,
+        "pct_of_all": 0.5,
+        "setups_affected": 3343,
+        "pct_setups": 22.0,
+        "repos_affected": 2254,
+        "pct_repos": 23.1
+      },
+      {
+        "rule": "CORE:C:0053",
+        "description": "Some instructions in this file are vague — N of N don't name specific constructs.",
+        "count": 1682,
+        "pct_of_all": 0.1,
+        "setups_affected": 1015,
+        "pct_setups": 6.7,
+        "repos_affected": 754,
+        "pct_repos": 7.7
+      },
+      {
+        "rule": "CORE:C:0059",
+        "description": "Neutral reasoning mentions prohibited behavior (never) — this primes the model toward the alternative instead ",
+        "count": 1032,
+        "pct_of_all": 0.1,
+        "setups_affected": 466,
+        "pct_setups": 3.1,
+        "repos_affected": 334,
+        "pct_repos": 3.4
+      },
+      {
+        "rule": "CORE:C:0055",
+        "description": "Description doesn't match content — the model may not invoke this skill/agent when it should.",
+        "count": 37,
+        "pct_of_all": 0.0,
+        "setups_affected": 29,
+        "pct_setups": 0.2,
+        "repos_affected": 23,
+        "pct_repos": 0.2
+      }
+    ],
+    "severity": {
+      "error": {
+        "count": 450,
+        "pct": 0.0
+      },
+      "warning": {
+        "count": 1999510,
+        "pct": 99.3
+      },
+      "info": {
+        "count": 12648,
+        "pct": 0.6
+      }
+    },
+    "per_agent_top5": {
+      "claude": [
+        {
+          "rule": "CORE:C:0042",
+          "count": 227321,
+          "pct": 33.6
+        },
+        {
+          "rule": "CORE:E:0004",
+          "count": 137234,
+          "pct": 20.3
+        },
+        {
+          "rule": "CORE:C:0044",
+          "count": 106444,
+          "pct": 15.7
+        },
+        {
+          "rule": "CORE:C:0041",
+          "count": 56340,
+          "pct": 8.3
+        },
+        {
+          "rule": "CORE:C:0050",
+          "count": 35673,
+          "pct": 5.3
+        }
+      ],
+      "generic": [
+        {
+          "rule": "CORE:C:0042",
+          "count": 194413,
+          "pct": 32.3
+        },
+        {
+          "rule": "CORE:E:0004",
+          "count": 111428,
+          "pct": 18.5
+        },
+        {
+          "rule": "CORE:C:0044",
+          "count": 106494,
+          "pct": 17.7
+        },
+        {
+          "rule": "CORE:C:0041",
+          "count": 49329,
+          "pct": 8.2
+        },
+        {
+          "rule": "CORE:C:0043",
+          "count": 32675,
+          "pct": 5.4
+        }
+      ],
+      "copilot": [
+        {
+          "rule": "CORE:C:0042",
+          "count": 127200,
+          "pct": 32.8
+        },
+        {
+          "rule": "CORE:C:0044",
+          "count": 77938,
+          "pct": 20.1
+        },
+        {
+          "rule": "CORE:E:0004",
+          "count": 74018,
+          "pct": 19.1
+        },
+        {
+          "rule": "CORE:C:0041",
+          "count": 25391,
+          "pct": 6.5
+        },
+        {
+          "rule": "CORE:C:0043",
+          "count": 18820,
+          "pct": 4.8
+        }
+      ],
+      "cursor": [
+        {
+          "rule": "CORE:C:0042",
+          "count": 65038,
+          "pct": 29.8
+        },
+        {
+          "rule": "CORE:C:0044",
+          "count": 54250,
+          "pct": 24.8
+        },
+        {
+          "rule": "CORE:E:0004",
+          "count": 40968,
+          "pct": 18.8
+        },
+        {
+          "rule": "CORE:C:0041",
+          "count": 13645,
+          "pct": 6.2
+        },
+        {
+          "rule": "CORE:S:0039",
+          "count": 10358,
+          "pct": 4.7
+        }
+      ],
+      "antigravity": [
+        {
+          "rule": "CORE:C:0042",
+          "count": 19815,
+          "pct": 32.8
+        },
+        {
+          "rule": "CORE:E:0004",
+          "count": 11394,
+          "pct": 18.9
+        },
+        {
+          "rule": "CORE:C:0044",
+          "count": 9650,
+          "pct": 16.0
+        },
+        {
+          "rule": "CORE:C:0041",
+          "count": 5856,
+          "pct": 9.7
+        },
+        {
+          "rule": "CORE:C:0050",
+          "count": 3308,
+          "pct": 5.5
+        }
+      ],
+      "codex": [
+        {
+          "rule": "CORE:C:0042",
+          "count": 22004,
+          "pct": 32.7
+        },
+        {
+          "rule": "CORE:C:0044",
+          "count": 14766,
+          "pct": 21.9
+        },
+        {
+          "rule": "CORE:E:0004",
+          "count": 12143,
+          "pct": 18.0
+        },
+        {
+          "rule": "CORE:C:0041",
+          "count": 4799,
+          "pct": 7.1
+        },
+        {
+          "rule": "CORE:S:0039",
+          "count": 3178,
+          "pct": 4.7
+        }
+      ]
+    }
+  },
+  "specificity": {
+    "total_named": 786916,
+    "total_abstract": 1167834,
+    "total_charged": 1954750,
+    "named_pct": 40.3,
+    "abstract_pct": 59.7,
+    "total_content_atoms": 5766087,
+    "charged_pct_of_content_atoms": 33.9,
+    "files_all_abstract": 5830,
+    "files_all_abstract_pct": 8.5,
+    "files_majority_named": 30202,
+    "files_majority_named_pct": 44.3,
+    "per_agent": {
+      "claude": {
+        "named": 268112,
+        "abstract": 406127,
+        "named_pct": 39.8,
+        "abstract_pct": 60.2
+      },
+      "generic": {
+        "named": 244362,
+        "abstract": 354399,
+        "named_pct": 40.8,
+        "abstract_pct": 59.2
+      },
+      "copilot": {
+        "named": 147897,
+        "abstract": 220005,
+        "named_pct": 40.2,
+        "abstract_pct": 59.8
+      },
+      "cursor": {
+        "named": 78970,
+        "abstract": 115866,
+        "named_pct": 40.5,
+        "abstract_pct": 59.5
+      },
+      "antigravity": {
+        "named": 24543,
+        "abstract": 33415,
+        "named_pct": 42.3,
+        "abstract_pct": 57.7
+      },
+      "codex": {
+        "named": 23032,
+        "abstract": 38022,
+        "named_pct": 37.7,
+        "abstract_pct": 62.3
+      }
+    }
+  },
+  "multi_agent_delta": {
+    "n_multi_agent_projects": 4091,
+    "ties": 1170,
+    "best_agent_wins": {
+      "claude": 1367,
+      "generic": 1093,
+      "copilot": 266,
+      "cursor": 96,
+      "antigravity": 51,
+      "codex": 48
+    },
+    "worst_agent_losses": {
+      "claude": 1082,
+      "generic": 1112,
+      "copilot": 372,
+      "cursor": 189,
+      "antigravity": 109,
+      "codex": 57
+    },
+    "top_15_spreads": [
+      {
+        "project": "ESPresense/ESPresense",
+        "best_agent": "generic",
+        "best_band": "HIGH",
+        "worst_agent": "claude",
+        "worst_band": "LOW"
+      },
+      {
+        "project": "plastic-labs/tutor-gpt",
+        "best_agent": "claude",
+        "best_band": "HIGH",
+        "worst_agent": "cursor",
+        "worst_band": "LOW"
+      },
+      {
+        "project": "spring-projects/spring-ai",
+        "best_agent": "claude",
+        "best_band": "HIGH",
+        "worst_agent": "generic",
+        "worst_band": "LOW"
+      },
+      {
+        "project": "spring-projects/spring-amqp",
+        "best_agent": "claude",
+        "best_band": "HIGH",
+        "worst_agent": "generic",
+        "worst_band": "LOW"
+      },
+      {
+        "project": "spring-projects/spring-integration",
+        "best_agent": "claude",
+        "best_band": "HIGH",
+        "worst_agent": "generic",
+        "worst_band": "LOW"
+      },
+      {
+        "project": "spring-projects/spring-kafka",
+        "best_agent": "claude",
+        "best_band": "HIGH",
+        "worst_agent": "generic",
+        "worst_band": "LOW"
+      },
+      {
+        "project": "motiondivision/motion-vue",
+        "best_agent": "claude",
+        "best_band": "HIGH",
+        "worst_agent": "antigravity",
+        "worst_band": "LOW"
+      },
+      {
+        "project": "firebase/FirebaseUI-iOS",
+        "best_agent": "generic",
+        "best_band": "HIGH",
+        "worst_agent": "claude",
+        "worst_band": "LOW"
+      },
+      {
+        "project": "railspulse-org/rails_pulse",
+        "best_agent": "claude",
+        "best_band": "HIGH",
+        "worst_agent": "antigravity",
+        "worst_band": "LOW"
+      },
+      {
+        "project": "lgazo/drawio-mcp-server",
+        "best_agent": "generic",
+        "best_band": "HIGH",
+        "worst_agent": "claude",
+        "worst_band": "LOW"
+      },
+      {
+        "project": "avishayil/react-native-restart",
+        "best_agent": "claude",
+        "best_band": "HIGH",
+        "worst_agent": "generic",
+        "worst_band": "LOW"
+      },
+      {
+        "project": "svenshi/oxidns",
+        "best_agent": "generic",
+        "best_band": "HIGH",
+        "worst_agent": "claude",
+        "worst_band": "LOW"
+      },
+      {
+        "project": "otterscan/otterscan",
+        "best_agent": "generic",
+        "best_band": "HIGH",
+        "worst_agent": "claude",
+        "worst_band": "LOW"
+      },
+      {
+        "project": "splunk/splunk-sdk-python",
+        "best_agent": "generic",
+        "best_band": "HIGH",
+        "worst_agent": "claude",
+        "worst_band": "LOW"
+      },
+      {
+        "project": "firebase/FirebaseUI-Android",
+        "best_agent": "generic",
+        "best_band": "HIGH",
+        "worst_agent": "claude",
+        "worst_band": "LOW"
+      }
+    ]
+  },
+  "file_count_quality": {
+    "buckets": [
+      {
+        "bucket": "1",
+        "n": 8269,
+        "bands": {
+          "LOW": 586,
+          "MODERATE": 2377,
+          "HIGH": 5306
+        },
+        "bands_pct": {
+          "LOW": 7.1,
+          "MODERATE": 28.7,
+          "HIGH": 64.2
+        }
+      },
+      {
+        "bucket": "2-5",
+        "n": 3962,
+        "bands": {
+          "LOW": 167,
+          "MODERATE": 1232,
+          "HIGH": 2563
+        },
+        "bands_pct": {
+          "LOW": 4.2,
+          "MODERATE": 31.1,
+          "HIGH": 64.7
+        }
+      },
+      {
+        "bucket": "6-20",
+        "n": 1965,
+        "bands": {
+          "LOW": 48,
+          "MODERATE": 680,
+          "HIGH": 1237
+        },
+        "bands_pct": {
+          "LOW": 2.4,
+          "MODERATE": 34.6,
+          "HIGH": 63.0
+        }
+      },
+      {
+        "bucket": "21-50",
+        "n": 565,
+        "bands": {
+          "LOW": 8,
+          "MODERATE": 218,
+          "HIGH": 339
+        },
+        "bands_pct": {
+          "LOW": 1.4,
+          "MODERATE": 38.6,
+          "HIGH": 60.0
+        }
+      },
+      {
+        "bucket": "51-90",
+        "n": 200,
+        "bands": {
+          "LOW": 1,
+          "MODERATE": 84,
+          "HIGH": 115
+        },
+        "bands_pct": {
+          "LOW": 0.5,
+          "MODERATE": 42.0,
+          "HIGH": 57.5
+        }
+      }
+    ]
+  },
+  "config_types": {
+    "base": {
+      "n_files": 25056,
+      "n_files_scored": 25095,
+      "bands": {
+        "LOW": 1716,
+        "MODERATE": 6930,
+        "HIGH": 16449
+      },
+      "bands_pct": {
+        "LOW": 6.8,
+        "MODERATE": 27.6,
+        "HIGH": 65.5
+      },
+      "named_pct": 47.0,
+      "terse_pct": 19.2,
+      "projects_using": 0
+    },
+    "rules": {
+      "n_files": 3040,
+      "n_files_scored": 3043,
+      "bands": {
+        "LOW": 413,
+        "MODERATE": 839,
+        "HIGH": 1791
+      },
+      "bands_pct": {
+        "LOW": 13.6,
+        "MODERATE": 27.6,
+        "HIGH": 58.9
+      },
+      "named_pct": 41.5,
+      "terse_pct": 23.0,
+      "projects_using": 632
+    },
+    "skills": {
+      "n_files": 32452,
+      "n_files_scored": 32656,
+      "bands": {
+        "LOW": 3952,
+        "MODERATE": 11551,
+        "HIGH": 17153
+      },
+      "bands_pct": {
+        "LOW": 12.1,
+        "MODERATE": 35.4,
+        "HIGH": 52.5
+      },
+      "named_pct": 38.3,
+      "terse_pct": 20.2,
+      "projects_using": 2446
+    },
+    "agents": {
+      "n_files": 2812,
+      "n_files_scored": 2816,
+      "bands": {
+        "LOW": 552,
+        "MODERATE": 1209,
+        "HIGH": 1055
+      },
+      "bands_pct": {
+        "LOW": 19.6,
+        "MODERATE": 42.9,
+        "HIGH": 37.5
+      },
+      "named_pct": 29.1,
+      "terse_pct": 26.1,
+      "projects_using": 567
+    },
+    "other": {
+      "n_files": 4304,
+      "n_files_scored": 4331,
+      "bands": {
+        "LOW": 602,
+        "MODERATE": 1714,
+        "HIGH": 2015
+      },
+      "bands_pct": {
+        "LOW": 13.9,
+        "MODERATE": 39.6,
+        "HIGH": 46.5
+      },
+      "named_pct": 33.1,
+      "terse_pct": 24.5,
+      "projects_using": 1192
+    },
+    "per_agent": {
+      "claude": {
+        "base": 9389,
+        "rules": 1062,
+        "skills": 10000,
+        "agents": 1431,
+        "other": 4179,
+        "total": 26061
+      },
+      "generic": {
+        "base": 10466,
+        "rules": 3,
+        "skills": 10814,
+        "agents": 0,
+        "other": 0,
+        "total": 21283
+      },
+      "copilot": {
+        "base": 3519,
+        "rules": 296,
+        "skills": 5974,
+        "agents": 953,
+        "other": 2134,
+        "total": 12876
+      },
+      "cursor": {
+        "base": 1237,
+        "rules": 1804,
+        "skills": 4199,
+        "agents": 270,
+        "other": 368,
+        "total": 7878
+      },
+      "antigravity": {
+        "base": 1026,
+        "rules": 0,
+        "skills": 887,
+        "agents": 18,
+        "other": 252,
+        "total": 2183
+      },
+      "codex": {
+        "base": 440,
+        "rules": 0,
+        "skills": 1348,
+        "agents": 177,
+        "other": 176,
+        "total": 2141
+      }
+    }
+  },
+  "skills_quality": {
+    "total_skills": 9505,
+    "total_skill_files": 32452,
+    "top_skills_by_adoption": [
+      {
+        "name": "release",
+        "repos": 121,
+        "files": 176,
+        "high_pct": 56.2,
+        "low_pct": 4.5,
+        "named_pct": 42.3
+      },
+      {
+        "name": "code-review",
+        "repos": 75,
+        "files": 137,
+        "high_pct": 33.6,
+        "low_pct": 18.2,
+        "named_pct": 28.0
+      },
+      {
+        "name": "README.md",
+        "repos": 72,
+        "files": 103,
+        "high_pct": 66.0,
+        "low_pct": 8.7,
+        "named_pct": 47.2
+      },
+      {
+        "name": "review-pr",
+        "repos": 49,
+        "files": 164,
+        "high_pct": 38.4,
+        "low_pct": 9.8,
+        "named_pct": 29.5
+      },
+      {
+        "name": "commit",
+        "repos": 46,
+        "files": 71,
+        "high_pct": 40.8,
+        "low_pct": 11.3,
+        "named_pct": 34.6
+      },
+      {
+        "name": "create-pr",
+        "repos": 38,
+        "files": 71,
+        "high_pct": 49.3,
+        "low_pct": 5.6,
+        "named_pct": 34.9
+      },
+      {
+        "name": "release-notes",
+        "repos": 38,
+        "files": 78,
+        "high_pct": 51.3,
+        "low_pct": 2.6,
+        "named_pct": 35.6
+      },
+      {
+        "name": "openspec-explore",
+        "repos": 36,
+        "files": 66,
+        "high_pct": 0.0,
+        "low_pct": 89.4,
+        "named_pct": 7.9
+      },
+      {
+        "name": "openspec-apply-change",
+        "repos": 35,
+        "files": 65,
+        "high_pct": 0.0,
+        "low_pct": 0.0,
+        "named_pct": 20.4
+      },
+      {
+        "name": "openspec-archive-change",
+        "repos": 35,
+        "files": 65,
+        "high_pct": 0.0,
+        "low_pct": 0.0,
+        "named_pct": 25.7
+      },
+      {
+        "name": "pr-review",
+        "repos": 32,
+        "files": 92,
+        "high_pct": 27.2,
+        "low_pct": 10.9,
+        "named_pct": 29.4
+      },
+      {
+        "name": "testing",
+        "repos": 32,
+        "files": 64,
+        "high_pct": 64.1,
+        "low_pct": 7.8,
+        "named_pct": 48.4
+      },
+      {
+        "name": "openspec-propose",
+        "repos": 31,
+        "files": 58,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 41.4
+      },
+      {
+        "name": "frontend-design",
+        "repos": 29,
+        "files": 47,
+        "high_pct": 0.0,
+        "low_pct": 6.4,
+        "named_pct": 2.7
+      },
+      {
+        "name": "verify",
+        "repos": 28,
+        "files": 38,
+        "high_pct": 71.1,
+        "low_pct": 2.6,
+        "named_pct": 40.0
+      },
+      {
+        "name": "agentic-workflows",
+        "repos": 26,
+        "files": 27,
+        "high_pct": 100.0,
+        "low_pct": 0.0,
+        "named_pct": 71.0
+      },
+      {
+        "name": "pr",
+        "repos": 26,
+        "files": 43,
+        "high_pct": 55.8,
+        "low_pct": 7.0,
+        "named_pct": 32.5
+      },
+      {
+        "name": "review",
+        "repos": 26,
+        "files": 42,
+        "high_pct": 40.5,
+        "low_pct": 14.3,
+        "named_pct": 26.9
+      },
+      {
+        "name": "triage",
+        "repos": 26,
+        "files": 77,
+        "high_pct": 18.2,
+        "low_pct": 29.9,
+        "named_pct": 29.5
+      },
+      {
+        "name": "skill-creator",
+        "repos": 23,
+        "files": 99,
+        "high_pct": 21.2,
+        "low_pct": 4.0,
+        "named_pct": 23.9
+      },
+      {
+        "name": "agent-browser",
+        "repos": 21,
+        "files": 136,
+        "high_pct": 30.1,
+        "low_pct": 33.8,
+        "named_pct": 40.2
+      },
+      {
+        "name": "changelog",
+        "repos": 21,
+        "files": 31,
+        "high_pct": 45.2,
+        "low_pct": 16.1,
+        "named_pct": 34.2
+      },
+      {
+        "name": "grill-me",
+        "repos": 21,
+        "files": 39,
+        "high_pct": 7.7,
+        "low_pct": 43.6,
+        "named_pct": 14.9
+      },
+      {
+        "name": "openspec-sync-specs",
+        "repos": 20,
+        "files": 33,
+        "high_pct": 21.2,
+        "low_pct": 0.0,
+        "named_pct": 23.0
+      },
+      {
+        "name": "AGENTS.md",
+        "repos": 19,
+        "files": 36,
+        "high_pct": 80.6,
+        "low_pct": 5.6,
+        "named_pct": 40.1
+      },
+      {
+        "name": "vercel-react-best-practices",
+        "repos": 18,
+        "files": 1361,
+        "high_pct": 30.0,
+        "low_pct": 26.4,
+        "named_pct": 34.8
+      },
+      {
+        "name": "fix-issue",
+        "repos": 17,
+        "files": 53,
+        "high_pct": 22.6,
+        "low_pct": 24.5,
+        "named_pct": 31.3
+      },
+      {
+        "name": "run-tests",
+        "repos": 17,
+        "files": 21,
+        "high_pct": 61.9,
+        "low_pct": 4.8,
+        "named_pct": 57.9
+      },
+      {
+        "name": "prepare-release",
+        "repos": 16,
+        "files": 24,
+        "high_pct": 54.2,
+        "low_pct": 4.2,
+        "named_pct": 41.1
+      },
+      {
+        "name": "tdd",
+        "repos": 16,
+        "files": 70,
+        "high_pct": 5.7,
+        "low_pct": 72.9,
+        "named_pct": 10.2
+      }
+    ],
+    "best_by_named": [
+      {
+        "name": "README.md",
+        "repos": 72,
+        "named_pct": 47.2
+      },
+      {
+        "name": "release",
+        "repos": 121,
+        "named_pct": 42.3
+      },
+      {
+        "name": "code-review",
+        "repos": 75,
+        "named_pct": 28.0
+      }
+    ],
+    "worst_by_named": [
+      {
+        "name": "code-review",
+        "repos": 75,
+        "named_pct": 28.0
+      },
+      {
+        "name": "release",
+        "repos": 121,
+        "named_pct": 42.3
+      },
+      {
+        "name": "README.md",
+        "repos": 72,
+        "named_pct": 47.2
+      }
+    ]
+  },
+  "subagents_quality": {
+    "total_subagent_roles": 1762,
+    "top_subagents": [
+      {
+        "name": "code-reviewer.md",
+        "repos": 40,
+        "named_pct": 20.0
+      },
+      {
+        "name": "agentic-workflows.md",
+        "repos": 24,
+        "named_pct": 36.2
+      },
+      {
+        "name": "agentic-workflows.agent.md",
+        "repos": 20,
+        "named_pct": 31.5
+      }
+    ]
+  },
+  "content_length": {
+    "base": {
+      "n_files": 25056,
+      "median_atoms": 66,
+      "mean_atoms": 104.3,
+      "median_directives": 17,
+      "mean_directives": 29.1,
+      "median_tokens": 16.3,
+      "named_pct": 47.0,
+      "directive_ratio": 28.6
+    },
+    "rules": {
+      "n_files": 3040,
+      "median_atoms": 29,
+      "mean_atoms": 54.0,
+      "median_directives": 9,
+      "mean_directives": 17.6,
+      "median_tokens": 15.7,
+      "named_pct": 41.5,
+      "directive_ratio": 37.3
+    },
+    "skills": {
+      "n_files": 32452,
+      "median_atoms": 61,
+      "mean_atoms": 88.7,
+      "median_directives": 17,
+      "mean_directives": 28.1,
+      "median_tokens": 15.1,
+      "named_pct": 38.3,
+      "directive_ratio": 30.4
+    },
+    "agents": {
+      "n_files": 2812,
+      "median_atoms": 61,
+      "mean_atoms": 84.8,
+      "median_directives": 23,
+      "mean_directives": 33.2,
+      "median_tokens": 13.7,
+      "named_pct": 29.1,
+      "directive_ratio": 41.2
+    },
+    "other": {
+      "n_files": 4304,
+      "median_atoms": 39,
+      "mean_atoms": 64.3,
+      "median_directives": 15,
+      "mean_directives": 25.2,
+      "median_tokens": 14.3,
+      "named_pct": 33.1,
+      "directive_ratio": 46.2
+    }
+  },
+  "descriptive": {
+    "total_files": 67664,
+    "file_size": {
+      "mean_atoms": 91.2,
+      "median_atoms": 60
+    },
+    "directives_per_file": {
+      "mean": 28.0,
+      "median": 17,
+      "zero_directive_files": 4758,
+      "zero_directive_pct": 6.6
+    },
+    "directive_ratio": {
+      "mean": 34.2,
+      "median": 31.2
+    },
+    "instruction_length": {
+      "mean_tokens": 16.7,
+      "median_tokens": 15
+    },
+    "top_file_names": [
+      {
+        "path": "AGENTS.md",
+        "count": 7849
+      },
+      {
+        "path": "CLAUDE.md",
+        "count": 5044
+      },
+      {
+        "path": ".github/copilot-instructions.md",
+        "count": 1455
+      },
+      {
+        "path": "GEMINI.md",
+        "count": 247
+      },
+      {
+        "path": ".claude/CLAUDE.md",
+        "count": 218
+      },
+      {
+        "path": "docs/AGENTS.md",
+        "count": 169
+      },
+      {
+        "path": ".cursorrules",
+        "count": 139
+      },
+      {
+        "path": "CONTEXT.md",
+        "count": 110
+      },
+      {
+        "path": ".claude/skills/release/SKILL.md",
+        "count": 93
+      },
+      {
+        "path": ".vscode/settings.json",
+        "count": 83
+      },
+      {
+        "path": "tests/AGENTS.md",
+        "count": 82
+      },
+      {
+        "path": ".claude/settings.json",
+        "count": 69
+      },
+      {
+        "path": "docs/CLAUDE.md",
+        "count": 59
+      },
+      {
+        "path": ".claude/rules/testing.md",
+        "count": 55
+      },
+      {
+        "path": ".github/AGENTS.md",
+        "count": 52
+      },
+      {
+        "path": ".agents/skills/release/SKILL.md",
+        "count": 49
+      },
+      {
+        "path": ".claude/agents/code-reviewer.md",
+        "count": 48
+      },
+      {
+        "path": "frontend/AGENTS.md",
+        "count": 48
+      },
+      {
+        "path": ".agents/skills/README.md",
+        "count": 47
+      },
+      {
+        "path": ".claude/skills/review-pr/SKILL.md",
+        "count": 47
+      }
+    ],
+    "unique_file_paths": 32006
+  },
+  "report_figures": {
+    "vague_instruction_prevalence": {
+      "rule": "CORE:C:0042",
+      "repos_with_finding": 8910,
+      "repos_with_linted_setup": 9776,
+      "pct_repos": 91.1,
+      "findings": 655791,
+      "content_atoms": 5766087,
+      "one_finding_per_n_instructions": 8.79
+    },
+    "stars_vs_score": {
+      "spearman_rho": -0.028,
+      "p": 0.006,
+      "n_repos_scored": 9674
+    },
+    "subagent_vs_main_files": {
+      "subagent_files_scored": 2816,
+      "subagent_pct_below_5": 19.6,
+      "main_files_scored": 25095,
+      "main_pct_below_5": 6.8
+    }
+  }
+}
